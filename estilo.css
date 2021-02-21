@@ -1,0 +1,16 @@
+body {
+  background-color:rgb(11, 241, 241) ;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+
+.titulo{
+  color: brown;
+}
+
+#botaopasseio {
+  background-color: greenyellow;
+}
