@@ -1,16 +1,31 @@
+/* ✓ Cor de fundo para o marcador body das duas páginas html
+ */
 body {
   background-color:rgb(11, 241, 241) ;
 }
 
+
+/* ✓ Nos parágrafos das duas páginas use fonte times new roman e use uma cor de sua preferência (exceto
+preto) */
 p {
   font-family: 'Times New Roman', Times, serif;
   color: red;
+  float: left;
 }
 
+/* ✓ Crie uma classe e a aplique em uma página */
 .titulo{
   color: brown;
 }
 
+
+/* ✓ Crie um id e aplique em uma página */
 #botaopasseio {
   background-color: greenyellow;
+}
+
+img {
+
+  border-radius: 70%;
+  float: right;
 }
