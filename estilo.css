@@ -1,31 +1,74 @@
-/* ✓ Cor de fundo para o marcador body das duas páginas html
- */
-body {
-  background-color:rgb(11, 241, 241) ;
+/* Crie um id e aplique em uma página */
+ 
+ #titulosecundario {
+  
+  font-size: 30px;
+  text-align: center;
+  
+  
+ }
+ 
+ /*  4. Para todas as figuras use o contorno oval, centralize o texto da legenda e mude a cor de fundo
+para uma cor de sua preferência. */
+ 
+ img {
+    border-radius: 70%;
+    width: 700px;
+    border: 15px blue solid;
+    background: white;
 }
-
-
-/* ✓ Nos parágrafos das duas páginas use fonte times new roman e use uma cor de sua preferência (exceto
-preto) */
-p {
-  font-family: 'Times New Roman', Times, serif;
+ 
+figcaption  {
+ 
+text-align: center;
+ 
+ }
+ 
+ 
+ 
+ /*  Crie uma classe e a aplique em uma página */
+ .tituloprincipal{
   color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  text-align: center;
+ }
+  
+ 
+ 
+/* Cor de fundo para o marcador body das duas páginas html   */
+ body {
+ 
+  margin: 25px 100px 75px 100px;
+  background: yellow;
+ 
+ }
+ 
+ 
+ /* Nos parágrafos das duas páginas use fonte times new roman e use uma cor de sua preferência (exceto
+preto) */
+ p {
+  
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+ }
+ 
+/* * {
+  box-sizing: border-box;
+} */
+ 
+
+
+.boxesporte {
   float: left;
+  width: 50%;
+  padding: 10px;
+ 
 }
 
-/* ✓ Crie uma classe e a aplique em uma página */
-.titulo{
-  color: brown;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-
-/* ✓ Crie um id e aplique em uma página */
-#botaopasseio {
-  background-color: greenyellow;
-}
-
-img {
-
-  /*border-radius: 70%; */
-  float: right;
-}
