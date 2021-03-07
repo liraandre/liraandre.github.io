@@ -1,23 +1,139 @@
 <!-- André Lira Ferreira de Andrade -->
 
-<!DOCTYPE html>
-<html lang="pt-br">
+ <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Album de Esportes</title>
-      <h1>Esportes</h1>
-      <div>
-      <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!
-         In elementis mé pra quem é amistosis quis leo. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.</p>
-
-         <img    src="img/futebol.jpg" alt="jogando futebol no society">
-
-        </div>
-
-        <a href="passeio.html"><button>Meus Passeios</button></a>
-<body>
+<style>
+ 
+ 
+ /* Crie um id e aplique em uma página */
+ 
+ #titulosecundario {
   
+  font-size: 30px;
+  text-align: center;
+  
+  
+ }
+ 
+ /*  4. Para todas as figuras use o contorno oval, centralize o texto da legenda e mude a cor de fundo
+para uma cor de sua preferência. */
+ 
+ img {
+    border-radius: 70%;
+    width: 700px;
+    border: 15px blue solid;
+    background: white;
+}
+ 
+figcaption  {
+ 
+text-align: center;
+ 
+ }
+ 
+ 
+ 
+ /*  Crie uma classe e a aplique em uma página */
+ .tituloprincipal{
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  text-align: center;
+ }
+  
+ 
+ 
+/* Cor de fundo para o marcador body das duas páginas html   */
+ body {
+ 
+  margin: 25px 100px 75px 100px;
+  background: yellow;
+ 
+ }
+ 
+ 
+ /* Nos parágrafos das duas páginas use fonte times new roman e use uma cor de sua preferência (exceto
+preto) */
+ p {
+  
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+ }
+ 
+ * {
+  box-sizing: border-box;
+} 
+ 
+
+
+.boxesporte {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+ 
+ 
+</style>
+</head>
+<body>
+
+ 
+<h2 class="tituloprincipal">Esportes</h2>
+
+
+<div class="clearfix">
+  <div class="boxesporte" >
+   <h2>Futebol</h2>
+  <p>A imagem ao lado se refere a partida de futebol no campo de society onde a grama é sintetica. <br>
+   Nesse tipo de gramado tem muitas borrachinhas que servem para amortecimento. <br>
+   Esse esporte pode ser praticado em outros ambientes como:</p>
+   <!--  Utilize marcadores HTML para criação de listas ordenadas e não ordenadas  --!>
+ <!-- listas não ordenadas --!>
+ <ul> 
+        <li>Campo</li> 
+        <li>Quadra</li> 
+        <li>Areia</li> 
+        
+  </ul>
+<p>Outros esportes que vieram do futebol de campo: </p>
+ <!-- listas ordenadas --!>
+ <ol> 
+        <li>Futsal</li> 
+        <li>Futevolei</li> 
+        <li>Futebol de areia</li> 
+        
+  </ol>
+  </div>
+  <div class="boxesporte" >
+    <figure>
+    <img src="futebol.jpg" alt="futebol">
+    <figcaption>Futebol sendo jogado em quadra society.</figcaption>
+   </figure>
+  </div>
+ 
+</div>
+ 
+ 
+
+<a  href="passeio.html">Meus passeios</a>
+ 
+ 
+ 
+  
+
 </body>
 </html>
+
+
+
+ 
