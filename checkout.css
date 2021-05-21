@@ -1,0 +1,9 @@
+.form-group:invalid
+{
+    border: 1px solid #C00;
+}
+
+body
+{
+    padding-top: 55px;
+}

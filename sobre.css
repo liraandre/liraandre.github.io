@@ -1,0 +1,267 @@
+/*
+FORMATAÇÃO DA PÁGINA "sobre.html"
+*/
+body /*FORMATAÇÃO DO CORPO DA PÁGINA*/
+{
+    margin-left: auto; /*ESPAÇAMENTO PARA PARA ESQUERDA AUTOMÁTICO*/
+    margin-right: auto; /*ESPAÇAMENTO PARA DIREITA AUTOMÁTICO*/
+    /*width: 940px;*/
+    color: #333333; 
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+h1 /*FORMATAÇÃO DO PRIMEIRO TÍTULO DA PÁGINA*/
+{
+    background-image: url(file:///home/isaac/Documents/Web/zipcurso/mirrorfashion/img/sobre-background.jpg);/*LINK PARA O ARQUIVO DE FUNDO DO TÍTULO*/ 
+    padding: 10px;
+}
+
+h2 /*FORMATAÇÃO DO SEGUNDO TÍTULO DA PÁGINA*/
+{
+    border-bottom: 2px solid #333333; /*BORDA NA PARTE INFERIOR DO SEGUNDO TÍTULO*/
+    margin-top: 30px;
+}
+
+p:not(#copyright) /*FORMATAÇÃO DOS PARAGRAFOS DA PÁGINA*/
+{
+    padding: 0 45px;
+    text-indent: 15px;
+}
+
+figure /*FORMATAÇÃO DAS FIGURAS DA PÁGINA*/
+{
+    border: 1px solid #ccc; /*CRIA BORDA*/
+    background-color: #F2EDED;
+    text-align: center; /*CENTRALIZA AS IMAGENS*/
+    margin: 30px;
+    padding: 15px;
+}
+
+figcaption /*FORMATAÇÃO DA LEGENDA DAS FIGURAS DA PÁGINA*/
+{
+    margin: 10px;
+    font-style: italic; /*FORMATA AS LEGENDAS PARA ITALICO*/
+}
+
+#centro-distribuicao /*FORMATAÇÃO DA IMAGEM DO CENTRO DE DISTRIBUICAO*/
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+#rodape /*FORMATAÇÃO DO RODAPÉ*/
+{
+    
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+
+#familia-pelho /*FORMATAÇÃO DA IMAGEM DA FAMILIA PELHO*/
+{
+    float: right; /*A IMAGEM FICA FLUTUANDO DO LADO DIREITO DA PAGINA ENQUANDO O TEXTO FICA AO SEU REDOR*/
+    margin: 0 0 10px 10px;
+}
+
+.sacola
+{
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    font-size: 14px;
+    padding-top: 8px;
+    padding-right: 35px;
+    width: 140px;
+    text-align: right;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-opcoes ul
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+.menu-opcoes ul li
+{
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes a
+{
+    color: #036;
+}
+
+.menu-opcoes a:hover
+{
+    color: #007dc6;
+}
+
+.menu-opcoes a:active
+{
+    color: #867dc6;
+}
+
+.container
+{
+    /*border: 2px solid black;
+    /*position: relative;
+    display: block;*/
+    background-image: none;
+    margin: 0 auto;
+    width: 940px;
+}
+
+footer .container
+{
+    position: relative;
+}
+
+.social
+{
+    color: #333333;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.social li
+{
+    float: right;
+    margin-left: 25px;
+}
+
+.social a
+{
+    width: 32px;
+    height: 32px;
+    
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"]
+{
+    background-image: url(/home/isaac/Documents/Web/zipcurso/mirrorfashion/img/facebook.png);
+}
+
+.social a[href*="twitter.com"]
+{
+    background-image: url(/home/isaac/Documents/Web/zipcurso/mirrorfashion/img/twitter.png);
+}
+
+.social a[href*="plus.google.com"]
+{
+    background-image: url(/home/isaac/Documents/Web/zipcurso/mirrorfashion/img/googleplus.png);
+}
+
+header
+{
+    position: relative;
+}
+
+footer
+{
+    color: #777;
+    padding: 20px 0;
+    clear: both;
+    background-image: url(/home/isaac/Documents/Web/zipcurso/mirrorfashion/img/fundo-rodape.png);
+}
+
+p:not(.sacola):first-letter
+{
+    font-weight: bold;
+}
+
+:not(p) + p::first-line
+{
+    font-variant: small-caps;
+}
+
+h1+p
+{
+    text-indent: 0;
+}
+
+@media(max-width: 939px)
+{
+    p:not(#copyright)
+    {
+        text-align: justify;
+    }
+
+    .container
+    {
+        width: 96%;
+    }
+
+    .sacola
+    {
+        display: none;
+    }
+
+    .menu-opcoes ul
+    {
+        position: static;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .menu-opcoes ul li
+    {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    header
+    {
+        text-align: center;
+    }
+
+    header img
+    {
+        max-width: 50%;
+    }
+
+    #centro-distribuicao
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #centro-distribuicao img
+    {
+        width: 100%;
+    }
+
+    #centro-distribuicao,#familia-pelho
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    #familia-pelho
+    {
+        float: none;
+    }
+
+    #copyright
+    {
+        clear: left;
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .social
+    {
+        top: -10%;
+    }
+}
