@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width">
+        <title>Checkout Mirror Fashion</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/open-iconic-master/font/css/open-iconic-bootstrap.css">
+        <link rel="stylesheet" href="css/checkout.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mirror Fashion</a>
+
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav">
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perguntas frequentes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entre em contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron junbotron-fluid"> <!--Mensagem inicial-->
+            <div class="container">
+                <h1 class="display-4">Ótima escolha</h1>
+                <p class="lead">Obrigado por comprar na Mirror Fashion!Preencha com seus dados para efetivar a compra.</p>
+            </div>
+        </div> <!--Fim mensagem incial-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-light mb-3">
+                        <div class="card-header">Sua compra</div>
+        
+                        <div class="card-body"> <!--Informações do produto-->
+                            <img src="img/produtos/foto1-verde.png" alt="Fuzzi Cardigan" class="img-thumbnail mb-3 d-none d-sm-block">
+        
+                            <dl>
+                                <dt>Produto</dt>
+                                <dd>Fuzzy Cardigan</dd>
+                
+                                <dt>Cor</dt>
+                                <dd>Verde</dd>
+                
+                                <dt>Tamanho</dt>
+                                <dd>40</dd>
+                
+                                <dt>Preço</dt>
+                                <dd id="preco">R$ 129,90</dd>
+                            </dl>
+                        </div> <!--Fim informações do produto-->
+                    </div> <!--Fim .card .bg-light .mb-3-->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="qnt">Quantidade:</label>
+                                <input class="form-control" type="number" id="qnt" min="1" max="99" value="1">
+                            </div> <!--Fim .form group-->
+
+                            <div class="form-group">
+                                <label for="total">Total:</label>
+                                <output for="qnt preco" id="total" class="form-control">R$ 129,90</output>
+                            </div><!--Fim .form-group-->
+                        </div><!--Fim .card-body-->
+                    </div><!--Fim .card .mb-3-->
+                </div> <!--Fim .col-md-4-->
+    
+                <div class="col-md-8 col-xl-9">
+                    <form> <!--Formulario dados-->
+                        <div class="row">
+                            <fieldset class="col-lg-6"> <!--Dados pessoais-->
+                                <legend>Dados pessoais</legend>
+            
+                                <div class="form-group"> <!--Nome-->
+                                    <label for="nome">Nome completo</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                                </div> <!--Fim nome-->
+            
+                                <div class="form-group"> <!--Email-->
+                                    <label for="email">Email</label>
+                                    
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div> <!--Fim .input-group-prepend-->
+            
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                                    </div> <!--Fim .input-group .mb-3-->
+                                </div> <!--Fim Email-->
+            
+                                <div class="form-group"> <!--CPF-->
+                                    <label for="cpf">CPF</label>
+            
+                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required data-mask="999.999.999-99">
+                                </div> <!--Fim CPF-->
+            
+                                <div class="form-group custom-control custom-checkbox"> <!--Newsletter-->
+                                    <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                                    <label for="newsletter" class="custom-control-label">Quero receber Newsletter da Mirror Fashion</label>
+                                </div> <!--Fim Newsletter-->
+                            </fieldset> <!--Fim dados pessoais-->
+            
+                            <fieldset class="col-lg-6"> <!--Cartão de crédito-->
+                                <legend>Cartão de crédito</legend>
+            
+                                <div class="form-group"> <!--Número do cartão-->
+                                    <label for="numero-cartao">Número - CCV</label>
+                                    
+                                    <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" data-mask="9999 9999 9999 9999 - 999">
+                                </div> <!--Fim número do cartão-->
+            
+                                <div class="form-group"> <!--Bandeira do cartão-->
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="bandeira-cartao">Bandeira do Cartão</label>
+                                        </div> <!--Fim .input-gropu-pretend-->
+            
+                                        <select class="custom-select" id="bandeira-cartao">
+                                            <option disabled selected>Escolha uma opção... </option>
+                                            <option value="master">Master</option>
+                                            <option value="visa">Visa</option>
+                                            <option value="amex">American Express</option>
+                                        </select> <!--Fim #bandeira-cartão-->
+                                    </div> <!--Fim .input-group .mb-3-->
+                                </div> <!--Fim bandeira do cartão-->
+            
+                                <div class="form-group"> <!--Validade do cartão-->
+                                    <label for="validade-cartao">Validade</label>
+                                    
+                                    <input type="month" class="form-control" id="validade-cartao" name="validade cartao">
+                                </div> <!--Fim validade do cartão-->
+                            </fieldset> <!--Fim cartão de crédito-->
+                        </div> <!--FIm .row-->
+
+                        <button type="submit" class="btn btn-primary btn-lg"> <!--Confirmar pedido-->
+                            <span class="oi oi-thumb-up"></span>
+                            Confirmar pedido
+                        </button> <!--Fim confirma pedido-->
+                    </form> <!--Fim formulario dados-->
+                </div> <!--Fim .col-md-8-->
+            </div>
+        </div> <!--Fim .container-->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/total.js"></script>
+        <script type="text/javascript" src="js/inputmask-plugin.js"></script>
+    </body>
+</html>
